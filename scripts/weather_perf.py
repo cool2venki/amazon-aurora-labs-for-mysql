@@ -184,7 +184,13 @@ _thread.start_new_thread(progress_func, ())
 for thread_id in range(args.threads):
     _thread.start_new_thread(thread_func, (args.endpoint, args.username, args.password, args.database, max_id, query_iterations))
 
+<<<<<<< HEAD
 # Loop for 5 minutes before application exit
 for x in range(300):
   time.sleep(1)
 print("\n Thank you")
+=======
+# Loop indefinitely to prevent application exit
+while 1:
+    pass
+>>>>>>> e045bbafd6dd2540e1ba05ca75cc965b4c263c64
